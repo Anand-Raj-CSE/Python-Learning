@@ -40,3 +40,10 @@ with open('D:\LEARNING\PYTHON\Python Cognizant\input.txt') as input_file_ptr :
     input_file_ptr.seek(0)
     for line in input_file_ptr:
         print(line.rstrip())
+
+# Writing to a file
+with open('D:\LEARNING\PYTHON\Python Cognizant\input.txt','w') as input_file_ptr :
+    input_file_ptr.write('\n Excited for learning.')
+
+with open('D:\LEARNING\PYTHON\Python Cognizant\input.txt') as input_file_ptr :
+    print(input_file_ptr.read())
